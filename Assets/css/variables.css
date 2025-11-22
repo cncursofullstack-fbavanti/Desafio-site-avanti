@@ -1,0 +1,15 @@
+/** 
+    Declaring variables
+**/
+
+:root {
+    --bg-gradient: radial-gradient(circle at 0% 0%, #A139C4 0%, 10.2%, rgba(161,57,196,0) 34%), radial-gradient(circle at 99.58333333333333% 100%, #EB5259 0%, 12.9%, rgba(235,82,89,0) 43%), radial-gradient(circle at 14.583333333333334% 46.666666666666664%, #2B1136 0%, 60%, rgba(43,17,54,0) 100%), radial-gradient(circle at 48.9013671875% 49.521484375%, #3C1055 0%, 100%, rgba(60,16,85,0) 100%);
+    --bg-lightgrey: #e8eaed;
+    --bg-darkblue: #112352;
+    --bg-purple: #3c1055;
+    --bg-white: #fff;
+    --bg-orange: #eb5259;
+    --text-color-dark: #112352;
+    --text-color-light: #fff;
+    --text-color-hover: #9540BE;
+}
