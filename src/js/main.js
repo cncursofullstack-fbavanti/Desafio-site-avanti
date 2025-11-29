@@ -1,0 +1,31 @@
+// src/js/main.js
+import { createFullscreenHeader } from "./components/fullscreenHeader.js";
+import { createCallout01 } from "./components/callout01.js";
+import { createCallout02 } from "./components/callout02.js";
+import { createCallout03 } from "./components/callout03.js";
+import { createTestimonial } from "./components/testimonial.js";
+import { createMarketing } from "./components/marketing.js";
+import { createFooter } from "./components/footer.js";
+
+function initApp() {
+  const root = document.getElementById("app-root");
+  if (!root) return;
+
+  const header = createFullscreenHeader();
+  
+  const main = document.createElement("main");
+
+  main.appendChild(createCallout01());
+  main.appendChild(createCallout02());
+  main.appendChild(createCallout03());
+  main.appendChild(createTestimonial());
+  main.appendChild(createMarketing());
+
+  const footer = createFooter();
+
+  root.appendChild(header);
+  root.appendChild(main);
+  root.appendChild(footer);
+}
+
+document.addEventListener("DOMContentLoaded", initApp);
