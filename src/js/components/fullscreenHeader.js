@@ -29,7 +29,10 @@ export function createFullscreenHeader() {
 
   center.innerHTML = `
     <header>
-      <h1 id="trademark">Atlântico Avanti</h1>
+      <div>
+          <h1>Atlântico Avanti</h1>
+          <div class="hamburguer"><span></span></div>
+      </div>
       <h2>Escola Atlântico Avanti</h2>
       <p>Somos a escola de tecnologia, inovação e liderança do Instituto Atlântico</p>
     </header>
@@ -38,6 +41,7 @@ export function createFullscreenHeader() {
   // navegação lateral
   const nav = document.createElement("nav");
   nav.id = "header-navigation";
+  nav.classList.add("hide");
   nav.innerHTML = `
     <ul id="header-navigation-main">
       <li>
