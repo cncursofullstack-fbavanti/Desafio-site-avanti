@@ -19,6 +19,7 @@ export function createTrainingCard({ title, description }) {
 
 export function createTrainingProgramsSection(programs) {
   const section = document.createElement("section");
+  section.id = "trainingPrograms";
   section.classList.add("center");
 
   const heading = document.createElement("h3");
