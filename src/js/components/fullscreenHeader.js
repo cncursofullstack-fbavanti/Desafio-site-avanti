@@ -28,50 +28,17 @@ export function createFullscreenHeader() {
   center.classList.add("center");
 
   center.innerHTML = `
-    <header>
-      <h1 id="trademark">Atlântico Avanti</h1>
+    <div>
       <h2>Escola Atlântico Avanti</h2>
       <p>Somos a escola de tecnologia, inovação e liderança do Instituto Atlântico</p>
-    </header>
+    </div>
   `;
 
-  // navegação lateral
-  const nav = document.createElement("nav");
-  nav.id = "header-navigation";
-  nav.innerHTML = `
-    <ul id="header-navigation-main">
-      <li>
-        <strong>Capacitações</strong>
-        <ul>
-          <li><a href="#">Cientista de Dados</a></li>
-          <li><a href="#">Desenvolvedor Fullstack</a></li>
-          <li><a href="#">Designer de Futuros</a></li>
-          <li><a href="#">Project Management</a></li>
-          <li><a href="#">Cybershield</a></li>
-          <li><a href="#">Next Gen AI</a></li>
-        </ul>
-      </li>
-      <li>
-        <strong>Soluções Educacionais</strong>
-        <ul>
-          <li>Bootcamp</li>
-          <li>Capacita Brasil</li>
-        </ul>
-      </li>
-    </ul>
-    <ul id="header-navigation-socialNetwork">
-      <li id="header-navigation-socialNetwork-insta"><a href="#">Instagram</a></li>
-      <li id="header-navigation-socialNetwork-linkedin"><a href="#">LinkedIn</a></li>
-      <li id="header-navigation-socialNetwork-youtube"><a href="#">Youtube</a></li>
-      <li id="header-navigation-socialNetwork-tiktok"><a href="#">Tiktok</a></li>
-    </ul>
-  `;
 
   // seção de capacitações (cards)
   const trainingsSection = createTrainingProgramsSection(PROGRAMS_DATA);
 
   section.appendChild(center);
-  section.appendChild(nav);
   section.appendChild(trainingsSection);
 
   return section;
