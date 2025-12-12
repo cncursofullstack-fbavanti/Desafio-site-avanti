@@ -1,0 +1,146 @@
+.testimonials{
+  position: relative;
+  padding: 70px 0 86px;
+  background-size: cover;
+  background-position: center;
+  color:#fff;
+  overflow:hidden;
+}
+
+/* dots */
+.testimonials::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background-image: radial-gradient(rgba(255,255,255,.18) 1px, transparent 1px);
+  background-size: 18px 18px;
+  opacity:.45;
+  pointer-events:none;
+}
+
+/* ondas à direita */
+.testimonials::after{
+  content:"";
+  position:absolute;
+  top:-40px;
+  right:-170px;
+  width:640px;
+  height:calc(100% + 80px);
+  background:
+    repeating-radial-gradient(circle at 60% 50%,
+      rgba(255,255,255,.28) 0 1px,
+      transparent 1px 12px);
+  opacity:.55;
+  pointer-events:none;
+}
+
+.testimonials__container{
+  width: min(1200px, calc(100% - 80px));
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+/* ===== HEADER EM CIMA (alinhado à direita) ===== */
+.testimonials__header{
+  text-align: right;
+  max-width: 680px;
+  margin-left: auto;
+  margin-bottom: 34px;
+}
+
+.testimonials__eyebrow{
+  margin: 0 0 10px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #2fe3e6;
+}
+
+.testimonials__title{
+  margin: 0;
+  font-size: 44px;
+  font-weight: 800;
+  line-height: 1.12;
+}
+
+/* ===== GRID EMBAIXO ===== */
+.testimonials__gridWrap{
+  /* espaço entre título e cards como no print */
+  margin-top: 18px;
+}
+
+.testimonials__grid{
+  display:grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 22px;
+  align-items: stretch;
+}
+
+/* ===== CARD ===== */
+.tcard{
+  border-radius: 16px;
+  border: 1px solid rgba(255,255,255,.22);
+  background: rgba(20, 10, 40, .35);
+  backdrop-filter: blur(14px);
+  overflow:hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,.22);
+}
+
+/* vídeo (altura igual do print) */
+.tcard__media{
+  height: 138px;
+  background: rgba(0,0,0,.30);
+}
+
+.tcard__iframe{
+  width:100%;
+  height:100%;
+  border:0;
+  display:block;
+}
+
+/* texto */
+.tcard__body{
+  padding: 16px 16px 18px;
+  text-align: center;
+}
+
+.tcard__quote{
+  margin: 0 0 14px;
+  font-size: 13px;
+  line-height: 1.45;
+  opacity: .95;
+}
+
+.tcard__name{
+  margin: 0;
+  font-weight: 800;
+  font-size: 14px;
+}
+
+.tcard__role{
+  margin: 2px 0 0;
+  font-size: 12px;
+  opacity: .82;
+}
+
+/* responsivo */
+@media (max-width: 1180px){
+  .testimonials__grid{
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .testimonials__title{
+    font-size: 38px;
+  }
+}
+
+@media (max-width: 860px){
+  .testimonials__header{
+    text-align:center;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .testimonials__grid{
+    grid-template-columns: 1fr;
+  }
+}
