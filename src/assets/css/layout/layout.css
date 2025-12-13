@@ -232,21 +232,48 @@ body {
 */
 #Callout-03 {
   padding: 4em 0;
-  background: #fff;
+  background: url(../../imgs/7dea42_77a09571f1864eab9d9e3aca636fe06f~mv2.jpg) no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+#Callout-03:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 0;
+  background-color: #a75ac3AA;
 }
 
 #Callout-03 .center {
-  text-align: center;
-  max-width: 60vw;
+  text-align: left;
+  position: relative;
+  z-index: 2;
 }
 
 #Callout-03 h3 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
+  font-size: 4rem;
+  margin-bottom: 2rem;
+  color: #fff;
+  line-height: 1;
+  font-weight: bolder;
+  max-width: 60vw;
 }
 
 #Callout-03 p {
-  margin-bottom: 1.5rem;
+  margin-bottom: 2.5rem;
+  color: white;
+  font-size: 1.5rem;
+  max-width: 60vw;
+}
+
+#Callout-03 a {
+  padding-left: 75px;
+  padding-right: 75px;
 }
 
 /**
