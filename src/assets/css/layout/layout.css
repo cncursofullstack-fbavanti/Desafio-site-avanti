@@ -27,7 +27,7 @@ body {
 #stickyHeader {
   position: sticky;
   top: 0;
-  width: 100vw;
+  max-width: 100vw;
 }
 
 #stickyHeader.BG {
