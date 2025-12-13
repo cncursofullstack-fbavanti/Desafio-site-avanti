@@ -12,7 +12,6 @@ let initialized = false;
 
 function observeScrollForHeader() {
   const header = document.querySelector('#stickyHeader');
-  console.log(header)
 
   function handleScroll() {
     if (window.scrollY > 80) {
